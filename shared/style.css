@@ -272,7 +272,7 @@ em{font-style:italic;font-family:'Space Grotesk',serif}
 @keyframes rotateS{to{transform:rotate(360deg)}}
 
 .main-portrait{
-  position:relative;width:320px;height:440px;border-radius:160px;
+  position:relative;width:360px;height:480px;border-radius:180px;
   overflow:hidden;border:1px solid rgba(255,255,255,.1);
   box-shadow:0 30px 80px rgba(0,0,0,.6);z-index:3;
   transition:transform .1s ease-out;

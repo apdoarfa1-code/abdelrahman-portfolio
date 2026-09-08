@@ -1,6 +1,13 @@
 /* Auto-generated from Desktop/عملاء — client work data */
 const CLIENTS = [
   {
+    slug: "menu-gps",
+    client: 'منيو GPS',
+    titleEn: 'GPS — Digital Menu & App UI',
+    images: ["assets/images/clients/menu-gps/img-01.jpg", "assets/images/clients/menu-gps/img-02.jpg", "assets/images/clients/menu-gps/img-03.jpg", "assets/images/clients/menu-gps/img-04.jpg", "assets/images/clients/menu-gps/img-05.jpg", "assets/images/clients/menu-gps/img-06.jpg", "assets/images/clients/menu-gps/img-07.jpg", "assets/images/clients/menu-gps/img-08.jpg"],
+    videos: [],
+  },
+  {
     slug: "cafe-gps",
     client: 'كافيه GPS',
     titleEn: 'Cafe GPS — Padel & Gaming',
