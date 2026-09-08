@@ -5,3 +5,4 @@ _archive/
 *.tar.gz
 .vercel/
 /tmp/
+.vercel

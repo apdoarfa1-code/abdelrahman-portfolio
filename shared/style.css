@@ -260,39 +260,39 @@ em{font-style:italic;font-family:'Space Grotesk',serif}
 .hero-meta span{font-size:11px;color:var(--muted);letter-spacing:.15em;text-transform:uppercase}
 
 /* Portrait stage (extreme motion) */
-.hero-right{position:relative;height:520px;display:flex;justify-content:center;align-items:center}
+.hero-right{position:relative;height:580px;display:flex;justify-content:center;align-items:center}
 .portrait-stage{position:relative;width:100%;height:100%;display:flex;align-items:center;justify-content:center;will-change:transform}
-.portrait-bg{position:absolute;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,rgba(200,255,0,.18),transparent 70%);filter:blur(70px);animation:bgPulse 8s ease-in-out infinite;z-index:0}
+.portrait-bg{position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(200,255,0,.18),transparent 70%);filter:blur(70px);animation:bgPulse 8s ease-in-out infinite;z-index:0}
 @keyframes bgPulse{50%{transform:scale(1.1)}}
 
 .portrait-ring{position:absolute;border:1px solid rgba(200,255,0,.15);border-radius:50%;pointer-events:none}
-.r1{width:360px;height:360px;animation:rotateS 20s linear infinite}
-.r2{width:400px;height:400px;animation:rotateS 25s linear infinite reverse;border-style:dashed}
-.r3{width:440px;height:440px;animation:rotateS 30s linear infinite;opacity:.5}
+.r1{width:410px;height:410px;animation:rotateS 20s linear infinite}
+.r2{width:450px;height:450px;animation:rotateS 25s linear infinite reverse;border-style:dashed}
+.r3{width:490px;height:490px;animation:rotateS 30s linear infinite;opacity:.5}
 @keyframes rotateS{to{transform:rotate(360deg)}}
 
 .main-portrait{
-  position:relative;width:360px;height:480px;border-radius:180px;
-  overflow:hidden;border:1px solid rgba(255,255,255,.1);
-  box-shadow:0 30px 80px rgba(0,0,0,.6);z-index:3;
+  position:relative;width:370px;height:490px;border-radius:185px;
+  overflow:hidden;border:1px solid rgba(255,255,255,.12);
+  box-shadow:0 35px 90px rgba(0,0,0,.7);z-index:3;
   transition:transform .1s ease-out;
 }
 .main-portrait img{width:100%;height:100%;object-fit:cover}
 .main-portrait-date{position:absolute;bottom:20px;right:20px;padding:5px 10px;background:#000;color:var(--lime);font-family:'JetBrains Mono';font-size:10px;border-radius:4px}
 
-.polaroid{position:absolute;width:100px;height:125px;background:#fff;padding:6px 6px 24px;box-shadow:0 14px 30px rgba(0,0,0,.4);z-index:4}
-.polaroid img{width:100%;height:100%;object-fit:cover}
-.p1{top:8%;left:0;transform:rotate(-8deg);animation:floatA 7s ease-in-out infinite}
-.p2{bottom:12%;right:-10px;transform:rotate(7deg);animation:floatB 8s ease-in-out infinite}
-.p3{top:45%;right:-40px;width:80px;height:100px;transform:rotate(-12deg);animation:floatA 9s ease-in-out infinite reverse}
+.polaroid{position:absolute;width:115px;height:140px;background:#fff;padding:6px 6px 24px;box-shadow:0 16px 36px rgba(0,0,0,.45);z-index:4;border-radius:4px;overflow:hidden}
+.polaroid img{width:100%;height:100%;object-fit:cover;border-radius:2px}
+.p1{top:6%;left:-25px;transform:rotate(-8deg);animation:floatA 7s ease-in-out infinite}
+.p2{bottom:10%;right:-25px;transform:rotate(7deg);animation:floatB 8s ease-in-out infinite}
+.p3{top:45%;right:-55px;width:95px;height:120px;transform:rotate(-12deg);animation:floatA 9s ease-in-out infinite reverse}
 @keyframes floatA{50%{transform:translateY(-15px) rotate(-8deg)}}
 @keyframes floatB{50%{transform:translateY(12px) rotate(7deg)}}
 
 .portrait-tag{position:absolute;padding:8px 14px;border-radius:100px;background:rgba(0,0,0,.85);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.1);font-family:'JetBrains Mono';font-size:11px;z-index:6;box-shadow:0 8px 16px rgba(0,0,0,.3);transition:all .3s;animation:floatA 8s ease-in-out infinite}
-.tag-a{top:8%;right:10px;color:var(--lime)}
-.tag-b{bottom:16%;left:-20px;color:var(--accent)}
-.tag-c{top:38%;left:-40px;color:var(--accent-2);animation-delay:1s}
-.tag-d{bottom:8%;right:-30px;color:#fff;animation-delay:.5s}
+.tag-a{top:6%;right:5px;color:var(--lime)}
+.tag-b{bottom:14%;left:-30px;color:var(--accent)}
+.tag-c{top:36%;left:-50px;color:var(--accent-2);animation-delay:1s}
+.tag-d{bottom:6%;right:-40px;color:#fff;animation-delay:.5s}
 
 .star-deco{position:absolute;width:30px;height:30px;color:var(--lime);top:20%;left:10%;animation:starFloat 4s ease-in-out infinite;z-index:5}
 @keyframes starFloat{50%{transform:translateY(-20px) rotate(180deg)}}
@@ -359,11 +359,11 @@ em{font-style:italic;font-family:'Space Grotesk',serif}
 .service:hover .service-icon svg{color:#000}
 
 /* ------------------- About + skills ------------------- */
-.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:center}
-.about-photo{position:sticky;top:120px}
-.photo-frame{border-radius:24px;overflow:hidden;position:relative;background:linear-gradient(135deg,#1a1a1a,#0d0d0d);padding:12px;border:1px solid var(--line)}
-.photo-frame img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:18px;filter:grayscale(.15)}
-.photo-meta{position:absolute;left:24px;right:24px;bottom:24px;display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:rgba(0,0,0,.6);backdrop-filter:blur(20px);border-radius:12px;border:1px solid var(--line);font-family:'JetBrains Mono';font-size:10px;letter-spacing:.15em;color:#fff}
+.about-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:50px;align-items:center;max-width:1080px;margin:0 auto}
+.about-photo{position:sticky;top:120px;max-width:340px;margin:0 auto}
+.photo-frame{border-radius:18px;overflow:hidden;position:relative;background:linear-gradient(135deg,#1a1a1a,#0d0d0d);padding:10px;border:1px solid var(--line);box-shadow:0 20px 50px rgba(0,0,0,.4)}
+.photo-frame img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:14px;filter:grayscale(.1)}
+.photo-meta{position:absolute;left:18px;right:18px;bottom:18px;display:flex;justify-content:space-between;align-items:center;padding:10px 14px;background:rgba(0,0,0,.7);backdrop-filter:blur(20px);border-radius:10px;border:1px solid var(--line);font-family:'JetBrains Mono';font-size:10px;letter-spacing:.12em;color:#fff}
 .ph-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#28e060;margin-right:8px;box-shadow:0 0 8px #28e060;animation:pulse 1.5s ease-in-out infinite}
 @keyframes pulse{50%{opacity:.5}}
 .ph-time{color:var(--lime)}
