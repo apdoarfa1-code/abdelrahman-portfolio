@@ -524,11 +524,12 @@ em{font-style:italic;font-family:'Space Grotesk',serif}
 /* ------------------- Connect page / ID Card ------------------- */
 .connect{padding-bottom:160px}
 .id-card{
-  display:grid; grid-template-columns:.75fr 1.25fr; gap:0;
+  display:grid; grid-template-columns:340px 1fr; gap:0;
   background:var(--card); border:1px solid var(--line); border-radius:28px;
   overflow:hidden; position:relative;
   box-shadow:0 20px 60px rgba(0,0,0,.3);
   backdrop-filter:blur(30px);
+  max-width:900px; margin:0 auto;
 }
 .id-card::before{
   content:""; position:absolute; inset:0; pointer-events:none;
@@ -536,12 +537,13 @@ em{font-style:italic;font-family:'Space Grotesk',serif}
 }
 .id-portrait{ 
   position:relative; display:flex; align-items:center; justify-content:center; 
-  padding:32px; background:rgba(0,0,0,.08); overflow:hidden;
+  padding:28px; background:rgba(0,0,0,.08); overflow:hidden;
+  min-height:440px;
 }
 .id-portrait img{ 
-  width:auto; max-width:260px; max-height:340px; 
-  border-radius:20px; object-fit:contain; filter:none;
-  box-shadow:0 16px 40px rgba(0,0,0,.25);
+  width:100%; max-width:280px; max-height:380px;
+  border-radius:20px; object-fit:cover; filter:none;
+  box-shadow:0 16px 40px rgba(0,0,0,.3);
 }
 .id-status{
   position:absolute; top:24px; left:24px;

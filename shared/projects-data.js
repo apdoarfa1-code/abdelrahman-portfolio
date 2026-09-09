@@ -130,7 +130,22 @@ const CLIENTS = [
     slug: "cvs",
     client: 'سير ذاتية عملاء',
     titleEn: 'Client CV Designs',
-    images: ["assets/images/clients/cvs/01-cv-reem.jpg", "assets/images/clients/cvs/02-cv-yazan.jpg", "assets/images/clients/cvs/03-cv-abanoub.jpg", "assets/images/clients/cvs/04-cv-gamel.jpg", "assets/images/clients/cvs/05-cv-abdelrahim.jpg", "assets/images/clients/cvs/doc-06.jpg", "assets/images/clients/cvs/doc-07.jpg", "assets/images/clients/cvs/doc-08.jpg", "assets/images/clients/cvs/doc-09.jpg", "assets/images/clients/cvs/doc-10.jpg", "assets/images/clients/cvs/doc-11.jpg", "assets/images/clients/cvs/doc-12.jpg", "assets/images/clients/cvs/doc-13.jpg"],
+    images: [
+      "assets/images/clients/cvs/01-cv-reem.jpg",
+      "assets/images/clients/cvs/02-cv-yazan.jpg",
+      "assets/images/clients/cvs/03-cv-abanoub.jpg",
+      "assets/images/clients/cvs/04-cv-gamel.jpg",
+      "assets/images/clients/cvs/05-cv-abdelrahim.jpg",
+      "assets/images/clients/cvs/cv-ehdaa-01.jpg",
+      "assets/images/clients/cvs/cv-walaa-01.jpg",
+      "assets/images/clients/cvs/cv-ahmed-zaki-01.jpg",
+      "assets/images/clients/cvs/cv-ahmed-zaki-02.jpg",
+      "assets/images/clients/cvs/cv-ahmed-zaki-03.jpg",
+      "assets/images/clients/cvs/cv-ahmed-zaki-04.jpg",
+      "assets/images/clients/cvs/cv-ahmed-zaki-05.jpg",
+      "assets/images/clients/cvs/cv-reem-new-01.jpg",
+      "assets/images/clients/cvs/cv-reem-new-02.jpg"
+    ],
     videos: [],
   },
 ];
