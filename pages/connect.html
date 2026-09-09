@@ -18,6 +18,11 @@
 </head>
 <body>
 
+<div class="video-bg-wrap">
+  <video class="video-bg" autoplay muted loop playsinline preload="auto" src="../assets/videos/bg-5.mp4"></video>
+  <div class="video-bg-overlay"></div>
+</div>
+
 <div class="ambient-blob" id="ambientBlob"></div>
 <div class="ambient-blob b2" id="ambientBlob2"></div>
 
@@ -96,66 +101,46 @@
         </div>
 
         <div class="id-info">
-          <div class="id-row"><span class="id-key">NAME</span><span class="id-val">Abdelrahman Zein (عبدالرحمن زين)</span></div>
-          <div class="id-row"><span class="id-key">ROLE</span><span class="id-val">Independent Designer · Art Director</span></div>
-          <div class="id-row"><span class="id-key">STUDIO</span><span class="id-val">Cairo, Egypt</span></div>
-          <div class="id-row"><span class="id-key">FOCUS</span><span class="id-val">Brand · Motion · Web · UI/UX</span></div>
-          <div class="id-row"><span class="id-key">LEAD AT</span><span class="id-val">TES-Egypt.com</span></div>
-
-          <div class="id-tags">
-            <span>BRANDING</span><span>UI/UX</span><span>MOTION</span><span>3D</span><span>WEB</span><span>ART DIRECTION</span>
+          <div class="id-header">
+            <h3 class="id-name">Abdelrahman Zein <span>(عبدالرحمن زين)</span></h3>
+            <span class="id-badge">Lead Designer · TES-Egypt</span>
           </div>
 
-          <h3 class="id-quote">"Designing at the intersection of bold brand expression and purposeful product."</h3>
-
-          <!-- WhatsApp CTA -->
-          <a href="https://wa.me/201029913210" target="_blank" rel="noopener" class="wa-cta">
-            <span class="wa-icon">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.7-1.7-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.7.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.1.2 2 3 4.8 4.2 1.7.7 2.3.8 3.1.6.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 00-8.5 15.3L2 22l4.9-1.5A10 10 0 1012 2zm6 14.4c-.6 1.7-2 3.1-3.7 3.7-1.7.6-3.6.6-5.3 0l-.4-.1-3.1.9.9-2.9-.2-.5A8 8 0 1118 12c0 1.5-.4 3-1.2 4.4z"/></svg>
-            </span>
-            <span class="wa-text">
-              <strong>Chat on WhatsApp</strong>
-              <em>+20 102 991 3210 · replies in ~24h</em>
-            </span>
-            <span class="wa-arrow">→</span>
-          </a>
-
-          <!-- Social circles (real links) -->
-          <div class="id-socials">
-            <a class="social-circle" data-tip="Facebook" href="https://www.facebook.com/apdo.bahaa.1" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.6 9.9V14.9H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.3.2 2.3.2V8.5h-1.3c-1.3 0-1.7.8-1.7 1.6V12h2.9l-.5 2.9h-2.5v6.9A10 10 0 0022 12z"/></svg>
-            </a>
-            <a class="social-circle" data-tip="Instagram" href="https://www.instagram.com/abdelrahman_arfa1/" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9C2.4 5.9 2.6 5.3 2.8 4.9c.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.2-2.1.4-.5.2-.9.5-1.2.8-.4.4-.6.7-.8 1.2-.2.4-.3 1-.4 2.1-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1 1.1.2 1.7.4 2.1.2.5.5.9.8 1.2.4.4.7.6 1.2.8.4.2 1 .3 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.5 1.2-.8.4-.4.6-.7.8-1.2.2-.4.3-1 .4-2.1.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1.1-.2-1.7-.4-2.1-.2-.5-.5-.9-.8-1.2-.4-.4-.7-.6-1.2-.8-.4-.2-1-.3-2.1-.4-1.2-.1-1.6-.1-4.7-.1zm0 3.1a4.9 4.9 0 110 9.8 4.9 4.9 0 010-9.8zm0 8a3.1 3.1 0 110-6.2 3.1 3.1 0 010 6.2zm6.3-8.2a1.1 1.1 0 11-2.3 0 1.1 1.1 0 012.3 0z"/></svg>
-            </a>
-            <a class="social-circle" data-tip="Behance" href="https://www.behance.net/apdoarfa" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.5 7.5c1.7 0 3 .9 3 2.8 0 1-.5 1.8-1.4 2.3 1.3.4 2 1.4 2 2.9 0 2.4-1.8 3.5-4 3.5H3v-11h6.5zm-3 3.7h2.9c.9 0 1.4-.4 1.4-1.2 0-.9-.6-1.2-1.5-1.2H6.5v2.4zm0 4.4h3c1 0 1.6-.4 1.6-1.4 0-1-.7-1.4-1.7-1.4h-3v2.8zM18.4 8.7c2.4 0 4 1.6 4 4 0 .3 0 .5-.1.8h-6c.1 1.3.9 2 2.1 2 .9 0 1.4-.4 1.7-1h2.1c-.4 1.7-1.9 2.8-3.9 2.8-2.6 0-4.3-1.7-4.3-4.3 0-2.5 1.8-4.3 4.4-4.3z"/></svg>
-            </a>
-            <a class="social-circle" data-tip="YouTube" href="https://www.youtube.com/@Infinity1-AI" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 7s-.2-1.6-.8-2.3c-.8-.9-1.6-.9-2-1C17 3.5 12 3.5 12 3.5s-5 0-8.2.2c-.4 0-1.2.1-2 1C1.2 5.4 1 7 1 7S.8 8.9.8 10.8v1.4C.8 14.1 1 16 1 16s.2 1.6.8 2.3c.8.9 1.8.9 2.3 1 1.7.2 7.2.2 7.2.2s5 0 8.2-.2c.4 0 1.2-.1 2-1 .6-.7.8-2.3.8-2.3s.2-1.9.2-3.8v-1.4C23.2 8.9 23 7 23 7zM9.7 14.6V8.4l5.4 3.1-5.4 3.1z"/></svg>
-            </a>
-            <a class="social-circle" data-tip="WhatsApp" href="https://wa.me/201029913210" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.7-1.7-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5l.3-.5c.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.7.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.1.2 2 3 4.8 4.2 1.7.7 2.3.8 3.1.6.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 00-8.5 15.3L2 22l4.9-1.5A10 10 0 1012 2z"/></svg>
-            </a>
-            <a class="social-circle" data-tip="My Website" href="https://www.tes-egy.com" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm7.4 9h-3.5c-.1-1.7-.5-3.2-1.1-4.4 2 .8 3.6 2.4 4.6 4.4zM12 4c.8 0 1.6.9 2.3 2.6.6 1.4.9 3 1 4.4H8.7c.1-1.4.4-3 1-4.4C10.4 4.9 11.2 4 12 4zM4.6 11c1-2 2.6-3.6 4.6-4.4-.6 1.2-1 2.7-1.1 4.4H4.6zM4.6 13h3.5c.1 1.7.5 3.2 1.1 4.4-2-.8-3.6-2.4-4.6-4.4zM12 20c-.8 0-1.6-.9-2.3-2.6-.6-1.4-.9-3-1-4.4h6.6c-.1 1.4-.4 3-1 4.4-.7 1.7-1.5 2.6-2.3 2.6zm2.8-2.6c.6-1.2 1-2.7 1.1-4.4h3.5c-1 2-2.6 3.6-4.6 4.4z"/></svg>
-            </a>
+          <div class="id-grid-rows">
+            <div class="id-row"><span class="id-key">ROLE</span><span class="id-val">Independent Designer & Art Director</span></div>
+            <div class="id-row"><span class="id-key">LOCATION</span><span class="id-val">Cairo, Egypt</span></div>
+            <div class="id-row"><span class="id-key">FOCUS</span><span class="id-val">Brand Identity · UI/UX · Motion</span></div>
+            <div class="id-row"><span class="id-key">CURRICULUM VITAE</span><span class="id-val"><a href="../assets/cv/Abdelrahman-CV.pdf" target="_blank" rel="noopener" class="cv-badge-link">Download CV (PDF) ↗</a></span></div>
           </div>
 
-          <!-- Direct link list (for easy editing) -->
-          <details class="id-direct">
-            <summary>Show direct links (editable)</summary>
-            <ul>
-              <li>Curriculum Vitae: <a href="../assets/cv/Abdelrahman-CV.pdf" target="_blank" rel="noopener">Download CV (PDF)</a></li>
-              <li>Facebook: <a href="https://www.facebook.com/apdo.bahaa.1" target="_blank" rel="noopener">facebook.com/apdo.bahaa.1</a></li>
-              <li>Instagram: <a href="https://www.instagram.com/abdelrahman_arfa1/" target="_blank" rel="noopener">@abdelrahman_arfa1</a></li>
-              <li>WhatsApp: <a href="https://wa.me/201029913210" target="_blank" rel="noopener">+20 102 991 3210</a></li>
-              <li>YouTube: <a href="https://www.youtube.com/@Infinity1-AI" target="_blank" rel="noopener">@Infinity1-AI</a></li>
-              <li>Behance: <a href="https://www.behance.net/apdoarfa" target="_blank" rel="noopener">apdoarfa</a></li>
-              <li>Website: <a href="https://www.tes-egy.com" target="_blank" rel="noopener">tes-egy.com</a></li>
-            </ul>
-          </details>
+          <div class="id-actions-bar">
+            <!-- WhatsApp CTA -->
+            <a href="https://wa.me/201029913210" target="_blank" rel="noopener" class="wa-cta-compact">
+              <span class="wa-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.7-1.7-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.7.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.1.2 2 3 4.8 4.2 1.7.7 2.3.8 3.1.6.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 00-8.5 15.3L2 22l4.9-1.5A10 10 0 1012 2z"/></svg>
+              </span>
+              <span>Chat on WhatsApp</span>
+            </a>
 
+            <!-- Social circles (real links) -->
+            <div class="id-socials-compact">
+              <a class="social-circle" data-tip="Facebook" href="https://www.facebook.com/apdo.bahaa.1" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.6 9.9V14.9H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.3.2 2.3.2V8.5h-1.3c-1.3 0-1.7.8-1.7 1.6V12h2.9l-.5 2.9h-2.5v6.9A10 10 0 0022 12z"/></svg>
+              </a>
+              <a class="social-circle" data-tip="Instagram" href="https://www.instagram.com/abdelrahman_arfa1/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9C2.4 5.9 2.6 5.3 2.8 4.9c.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2z"/></svg>
+              </a>
+              <a class="social-circle" data-tip="Behance" href="https://www.behance.net/apdoarfa" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.5 7.5c1.7 0 3 .9 3 2.8 0 1-.5 1.8-1.4 2.3 1.3.4 2 1.4 2 2.9 0 2.4-1.8 3.5-4 3.5H3v-11h6.5zm-3 3.7h2.9c.9 0 1.4-.4 1.4-1.2 0-.9-.6-1.2-1.5-1.2H6.5v2.4zm0 4.4h3c1 0 1.6-.4 1.6-1.4 0-1-.7-1.4-1.7-1.4h-3v2.8zM18.4 8.7c2.4 0 4 1.6 4 4 0 .3 0 .5-.1.8h-6c.1 1.3.9 2 2.1 2 .9 0 1.4-.4 1.7-1h2.1c-.4 1.7-1.9 2.8-3.9 2.8-2.6 0-4.3-1.7-4.3-4.3 0-2.5 1.8-4.3 4.4-4.3z"/></svg>
+              </a>
+              <a class="social-circle" data-tip="YouTube" href="https://www.youtube.com/@Infinity1-AI" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 7s-.2-1.6-.8-2.3c-.8-.9-1.6-.9-2-1C17 3.5 12 3.5 12 3.5s-5 0-8.2.2c-.4 0-1.2.1-2 1C1.2 5.4 1 7 1 7S.8 8.9.8 10.8v1.4C.8 14.1 1 16 1 16s.2 1.6.8 2.3c.8.9 1.8.9 2.3 1 1.7.2 7.2.2 7.2.2s5 0 8.2-.2c.4 0 1.2-.1 2-1 .6-.7.8-2.3.8-2.3s.2-1.9.2-3.8v-1.4C23.2 8.9 23 7 23 7zM9.7 14.6V8.4l5.4 3.1-5.4 3.1z"/></svg>
+              </a>
+              <a class="social-circle" data-tip="TES Egypt" href="https://www.tes-egy.com" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm7.4 9h-3.5c-.1-1.7-.5-3.2-1.1-4.4 2 .8 3.6 2.4 4.6 4.4zM12 4c.8 0 1.6.9 2.3 2.6.6 1.4.9 3 1 4.4H8.7c.1-1.4.4-3 1-4.4C10.4 4.9 11.2 4 12 4zM4.6 11c1-2 2.6-3.6 4.6-4.4-.6 1.2-1 2.7-1.1 4.4H4.6zM4.6 13h3.5c.1 1.7.5 3.2 1.1 4.4-2-.8-3.6-2.4-4.6-4.4zM12 20c-.8 0-1.6-.9-2.3-2.6-.6-1.4-.9-3-1-4.4h6.6c-.1 1.4-.4 3-1 4.4-.7 1.7-1.5 2.6-2.3 2.6zm2.8-2.6c.6-1.2 1-2.7 1.1-4.4h3.5c-1 2-2.6 3.6-4.6 4.4z"/></svg>
+              </a>
+            </div>
+          </div>
         </div>
 
       </div>
