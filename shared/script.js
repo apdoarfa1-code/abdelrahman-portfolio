@@ -290,8 +290,23 @@
     go(0);
   });
 
+  /* ------------------- Fullscreen Background Video Playback ------------------- */
+  const bgVid = $('.video-bg');
+  if (bgVid) {
+    bgVid.muted = true;
+    const startBg = () => bgVid.play().catch(() => {});
+    startBg();
+    ['click', 'touchstart', 'scroll', 'pointerdown'].forEach(ev => {
+      document.addEventListener(ev, startBg, { once: true, passive: true });
+    });
+  }
+
   document.addEventListener('visibilitychange', () => {
     carousels.forEach(c => c.videos.forEach(v => { if (document.hidden) v.pause(); }));
+    if (bgVid) {
+      if (document.hidden) bgVid.pause();
+      else bgVid.play().catch(() => {});
+    }
   });
 
   /* ------------------- Anchor smooth scroll (same-page only) ------------------- */
