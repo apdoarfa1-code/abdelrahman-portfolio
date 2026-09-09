@@ -20,22 +20,22 @@
   --card-glass:rgba(15,15,15,.6);
   --shade:rgba(0,0,0,.7);
 }
-/* light theme (professional reversed) */
+/* light theme (iOS 17 Glassmorphism — Black Text & Vibrant Orange) */
 [data-theme="light"]{
-  --bg:#f5f5ee;
-  --bg-2:#eaeae0;
-  --card:#ffffff;
+  --bg:#f2f2f7;
+  --bg-2:#e5e5ea;
+  --card:rgba(255,255,255,.72);
   --line:rgba(0,0,0,.08);
-  --text:#15151a;
-  --muted:#6b6b6b;
-  --lime:#1f9d4f;
-  --lime-2:#16823f;
-  --accent:#d83a14;
-  --accent-2:#c8005a;
-  --grad:linear-gradient(135deg,#1f9d4f 0%,#16823f 50%,#0b6328 100%);
-  --invert:#fff;
+  --text:#000000;
+  --muted:#55555d;
+  --lime:#ff5e00;
+  --lime-2:#e04e00;
+  --accent:#ff5e00;
+  --accent-2:#ff3b30;
+  --grad:linear-gradient(135deg,#ff5e00 0%,#ff3b30 100%);
+  --invert:#ffffff;
   --card-glass:rgba(255,255,255,.72);
-  --shade:rgba(0,0,0,.18);
+  --shade:rgba(0,0,0,.06);
 }
 html,body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 body{cursor:none;min-height:100vh}
@@ -524,17 +524,25 @@ em{font-style:italic;font-family:'Space Grotesk',serif}
 /* ------------------- Connect page / ID Card ------------------- */
 .connect{padding-bottom:160px}
 .id-card{
-  display:grid; grid-template-columns:.95fr 1.05fr; gap:0;
+  display:grid; grid-template-columns:.75fr 1.25fr; gap:0;
   background:var(--card); border:1px solid var(--line); border-radius:28px;
   overflow:hidden; position:relative;
-  box-shadow:0 30px 80px rgba(0,0,0,.5);
+  box-shadow:0 20px 60px rgba(0,0,0,.3);
+  backdrop-filter:blur(30px);
 }
 .id-card::before{
   content:""; position:absolute; inset:0; pointer-events:none;
-  background:linear-gradient(135deg, rgba(200,255,0,.07), transparent 60%);
+  background:linear-gradient(135deg, rgba(255,94,0,.08), transparent 60%);
 }
-.id-portrait{ position:relative; min-height:520px; overflow:hidden; }
-.id-portrait img{ width:100%; height:100%; object-fit:cover; filter:grayscale(.15) contrast(1.05); }
+.id-portrait{ 
+  position:relative; display:flex; align-items:center; justify-content:center; 
+  padding:32px; background:rgba(0,0,0,.08); overflow:hidden;
+}
+.id-portrait img{ 
+  width:auto; max-width:260px; max-height:340px; 
+  border-radius:20px; object-fit:contain; filter:none;
+  box-shadow:0 16px 40px rgba(0,0,0,.25);
+}
 .id-status{
   position:absolute; top:24px; left:24px;
   display:flex; align-items:center; gap:8px;
@@ -676,36 +684,72 @@ em{font-style:italic;font-family:'Space Grotesk',serif}
 }
 
 /* =================================================================
-   LIGHT THEME REFINEMENTS — full contrast & consistency pass
+   LIGHT THEME REFINEMENTS — iOS 17 Glassmorphism & Orange Accents
    ================================================================= */
-[data-theme="light"]{
-  --card-glass:rgba(255,255,255,.82);
-}
-/* headline highlight — dark text + green accent instead of white (was invisible) */
 [data-theme="light"] .hl{
-  background:linear-gradient(105deg,#15151a 0%,#15151a 60%,var(--lime) 60%,var(--lime) 100%);
+  background:linear-gradient(105deg,#000000 0%,#000000 60%,var(--lime) 60%,var(--lime) 100%);
   -webkit-background-clip:text;background-clip:text;
 }
-/* intro / loader stay cinematic dark in both themes — intentional splash */
 [data-theme="light"] .intro,[data-theme="light"] .loader{background:#0a0a0a}
 
-/* header notch — lighter border & shadow */
-[data-theme="light"] .notch-inner{border-color:rgba(0,0,0,.08);box-shadow:0 10px 30px rgba(0,0,0,.12)}
-[data-theme="light"] .theme-toggle{background:rgba(0,0,0,.03)}
+/* iOS 17 Header Notch & Floating Navigation */
+[data-theme="light"] .notch-inner{
+  background:rgba(255,255,255,.78);
+  backdrop-filter:blur(25px) saturate(180%);
+  -webkit-backdrop-filter:blur(25px) saturate(180%);
+  border:1px solid rgba(255,255,255,.9);
+  box-shadow:0 12px 32px rgba(0,0,0,.06), inset 0 1px 0 rgba(255,255,255,1);
+}
+[data-theme="light"] .theme-toggle{background:rgba(0,0,0,.04);color:#000}
+[data-theme="light"] .mobile-menu{background:rgba(242,242,247,.95);backdrop-filter:blur(30px)}
 
-/* mobile menu — light surface */
-[data-theme="light"] .mobile-menu{background:rgba(245,245,238,.97);backdrop-filter:blur(20px)}
-
-/* hero glow tints — green/orange instead of neon on white */
+/* Hero Background Glow */
 [data-theme="light"] .hero::before{
   background:
-    radial-gradient(800px 400px at 80% 20%,rgba(31,157,79,.09),transparent 60%),
-    radial-gradient(700px 500px at 20% 80%,rgba(216,58,20,.06),transparent 60%);
+    radial-gradient(800px 400px at 80% 20%,rgba(255,94,0,.12),transparent 60%),
+    radial-gradient(700px 500px at 20% 80%,rgba(255,59,48,.08),transparent 60%);
 }
 
-/* buttons */
-[data-theme="light"] .btn-ghost:hover{color:var(--bg)}
-[data-theme="light"] .btn-primary{color:#fff}
+/* iOS 17 Glass Cards */
+[data-theme="light"] .file-card,
+[data-theme="light"] .id-card,
+[data-theme="light"] .service,
+[data-theme="light"] .t-card,
+[data-theme="light"] .teaser-card,
+[data-theme="light"] .contact-card,
+[data-theme="light"] .photo-frame{
+  background:rgba(255,255,255,.75);
+  backdrop-filter:blur(28px) saturate(190%);
+  -webkit-backdrop-filter:blur(28px) saturate(190%);
+  border:1px solid rgba(255,255,255,.8);
+  box-shadow:0 12px 32px rgba(0,0,0,.05), inset 0 1px 0 rgba(255,255,255,1);
+  border-radius:20px;
+}
+[data-theme="light"] .file-card::before,
+[data-theme="light"] .file-card::after{
+  background:rgba(255,255,255,.6);
+  border:1px solid rgba(255,255,255,.8);
+}
+
+/* Buttons & Interactive Elements */
+[data-theme="light"] .btn-primary,
+[data-theme="light"] .cv-link{
+  background:var(--lime);
+  color:#ffffff;
+  box-shadow:0 10px 25px rgba(255,94,0,.3);
+}
+[data-theme="light"] .btn-ghost{
+  border-color:rgba(0,0,0,.15);
+  color:#000000;
+  background:rgba(255,255,255,.6);
+  backdrop-filter:blur(12px);
+}
+[data-theme="light"] .btn-ghost:hover{
+  background:#000000;
+  color:#ffffff;
+  border-color:#000000;
+}
+
 [data-theme="light"] .logo-mark,
 [data-theme="light"] .float-arrow,
 [data-theme="light"] .teaser-card:hover,
@@ -714,31 +758,41 @@ em{font-style:italic;font-family:'Space Grotesk',serif}
 [data-theme="light"] .service:hover,
 [data-theme="light"] .socials a:hover,
 [data-theme="light"] .id-tags span:hover{color:#fff}
-[data-theme="light"] .teaser-card:hover p,
-[data-theme="light"] .t-card.highlight .t-meta span{color:rgba(255,255,255,.75)}
 
-/* testimonial highlight card — white text on green gradient */
-[data-theme="light"] .t-card.highlight,
-[data-theme="light"] .t-card.highlight p{color:#fff}
+[data-theme="light"] .float-arrow{
+  background:var(--lime);
+  color:#fff;
+  box-shadow:0 12px 30px rgba(255,94,0,.35);
+}
+[data-theme="light"] .float-arrow:hover{
+  box-shadow:0 20px 50px rgba(255,94,0,.5);
+}
 
-/* soft dark tints replacing white-on-white surfaces */
+[data-theme="light"] .t-card.highlight{
+  background:var(--grad);
+  color:#ffffff;
+}
+[data-theme="light"] .t-card.highlight p,
+[data-theme="light"] .t-card.highlight .t-meta strong,
+[data-theme="light"] .t-card.highlight .t-meta span,
+[data-theme="light"] .t-card.highlight .t-score{
+  color:#ffffff;
+}
+
 [data-theme="light"] .service-icon,
 [data-theme="light"] .social-circle,
-[data-theme="light"] .id-direct{background:rgba(0,0,0,.03)}
+[data-theme="light"] .id-direct{
+  background:rgba(255,255,255,.6);
+  backdrop-filter:blur(12px);
+  border-color:rgba(0,0,0,.08);
+}
 [data-theme="light"] .skill-bar{background:rgba(0,0,0,.08)}
 [data-theme="light"] .contact-form input,
-[data-theme="light"] .contact-form textarea{background:rgba(0,0,0,.03)}
-
-/* shadows & glows tuned to green accent */
-[data-theme="light"] .float-arrow{box-shadow:0 14px 30px rgba(31,157,79,.35)}
-[data-theme="light"] .float-arrow:hover{box-shadow:0 24px 60px rgba(31,157,79,.45)}
-[data-theme="light"] .social-circle:hover{box-shadow:0 14px 30px rgba(31,157,79,.3)}
-[data-theme="light"] .scroll-progress{box-shadow:0 0 10px rgba(31,157,79,.6)}
-[data-theme="light"] .id-card{box-shadow:0 30px 80px rgba(0,0,0,.14)}
-[data-theme="light"] .project-expand,
-[data-theme="light"] .service,
-[data-theme="light"] .t-card,
-[data-theme="light"] .teaser-card{box-shadow:0 8px 24px rgba(0,0,0,.06)}
+[data-theme="light"] .contact-form textarea{
+  background:rgba(255,255,255,.6);
+  border-color:rgba(0,0,0,.1);
+  color:#000000;
+}
 [data-theme="light"] .project-expand:hover,
 [data-theme="light"] .t-card:hover{border-color:rgba(31,157,79,.4)}
 
